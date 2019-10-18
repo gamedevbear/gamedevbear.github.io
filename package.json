@@ -1,44 +1,34 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.16.1",
-    "gatsby-image": "^2.2.29",
-    "gatsby-plugin-manifest": "^2.2.23",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.31",
-    "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-sharp": "^2.2.23",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "bulma": "^0.7.4",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.15.28",
+    "gatsby-plugin-manifest": "^2.0.26",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-source-filesystem": "^2.1.28",
+    "gatsby-transformer-json": "^2.1.11",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.1.0",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "babel-eslint": "^10.0.1",
+    "babel-preset-gatsby": "^0.1.11",
+    "eslint-plugin-react": "^7.12.4",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.16.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "develop": "gatsby develop -p 8001",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   }
 }
